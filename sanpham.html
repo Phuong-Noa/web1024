@@ -4,61 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Sản phẩm</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <header>
         <div class="menu-ngang">
-            <a href="sanpham.html">Trang Chủ</a>
-            <a href="index.html">Sản Phẩm</a>
+            <a href="index.html">Trang Chủ</a>
+            <a href="#">Sản Phẩm</a>
             <a href="#">Giới Thiệu</a>
             <a href="#">Liên Hệ</a>
             <a href="#">Đăng Nhập</a>
             <!-- Dropdown Danh Mục -->
+            <div class="dropdown">
+                <button class="dropbtn">DANH MỤC ▼</button>
+                <ul id="dm" class="dropdown-menu"></ul>
+            </div>
         </div>
     </header>
 
     <div id="banner"></div>
     <section class="section">
+        <h3>Điện thoại nổi bật</h3>
         <div class="col100">
-            <h3>Sản phẩm mới nhất</h3>
             <div id="sp" class="product-list"></div>
 
-            <h3 style="padding: 1rem;">Sản phẩm hot</h2>
-                <div id="sp-laptop" class="product-list"></div>
+            <h3 style="margin-top: 30px;">Laptop</h3>
+            <div id="sp-laptop" class="product-list"></div>
+
+            <h3 style="margin-top: 30px;">Màn hình, Máy tính bàn</h3>
+            <div id="sp-manhinh" class="product-list"></div>
+
+            <h3 style="margin-top: 30px;">Máy tính bảng</h3>
+            <div id="sp-tablet" class="product-list"></div>
+
+            <h3 style="margin-top: 30px;">Âm thanh</h3>
+            <div id="sp-airport" class="product-list"></div>
         </div>
     </section>
-    <script src="JS/trangchu.js"></script>
     <script src="JS/data.js"></script>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Về chúng tôi</h3>
-                <p>Cửa hàng chuyên cung cấp điện thoại, laptop, máy tính bảng, tai nghe và các thiết bị công nghệ chính
-                    hãng.</p>
-            </div>
-            <div class="footer-links">
-                <h3>Liên kết nhanh</h3>
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Giỏ hàng</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h3>Liên hệ</h3>
-                <p>Địa chỉ: 123 Lê Lợi, Q.1, TP.HCM</p>
-                <p>Email: thephuong2204@gmail.com</p>
-                <p>Hotline: 0909 123 456</p>
-            </div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>Về chúng tôi</h3>
+            <p>Cửa hàng chuyên cung cấp điện thoại, laptop, máy tính bảng, tai nghe và các thiết bị công nghệ chính hãng.</p>
         </div>
-        <div class="footer-bottom">
-            &copy; 2025 Cửa hàng Công nghệ. All rights reserved.
+        <div class="footer-links">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: 123 Lê Lợi, Q.1, TP.HCM</p>
+            <p>Email: thephuong2204@gmail.com</p>
+            <p>Hotline: 0909 123 456</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Cửa hàng Công nghệ. All rights reserved.
+    </div>
+</footer>
 
 </body>
 
